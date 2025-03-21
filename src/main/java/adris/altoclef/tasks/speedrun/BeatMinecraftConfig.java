@@ -8,7 +8,7 @@ public class BeatMinecraftConfig {
     public boolean sleepThroughNight = false;
     public boolean rePickupCraftingTable = true;
     public int foodUnits = 220;
-    public int requiredBeds = 10;
+    public int requiredBeds = 0;
     public int minBuildMaterialCount = 5;
     public int buildMaterialCount = 64;
     public boolean rePickupSmoker = true;

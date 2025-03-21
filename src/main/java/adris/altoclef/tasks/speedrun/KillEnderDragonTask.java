@@ -134,7 +134,7 @@ public class KillEnderDragonTask extends Task {
         // If we have no building materials (stone + cobble + end stone), get end stone
         // If there are crystals, suicide blow em up.
         // If there are no crystals, punk the dragon if it's close.
-        int MINIMUM_BUILDING_BLOCKS = 1;
+        int MINIMUM_BUILDING_BLOCKS = 64;
         if (mod.getEntityTracker().entityFound(EndCrystalEntity.class) && mod.getItemStorage().getItemCount(Items.DIRT, Items.COBBLESTONE, Items.NETHERRACK, Items.END_STONE) < MINIMUM_BUILDING_BLOCKS || (collectBuildMaterialsTask.isActive() && !collectBuildMaterialsTask.isFinished())) {
             if (StorageHelper.miningRequirementMetInventory(MiningRequirement.WOOD)) {
                 mod.getBehaviour().addProtectedItems(Items.END_STONE);

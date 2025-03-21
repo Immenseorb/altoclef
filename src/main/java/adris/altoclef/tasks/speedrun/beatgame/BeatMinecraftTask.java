@@ -551,7 +551,7 @@ public class BeatMinecraftTask extends Task {
             int count = itemStorage.getItemCount(Items.RAW_IRON);
             int includedCount = count + itemStorage.getItemCount(Items.IRON_INGOT);
 
-            if ((!hasSufficientPickaxe && includedCount >= 3) || (!hasItem(mod, Items.SHIELD) && includedCount >= 1) || includedCount >= neededIron) {
+            if ((!hasSufficientPickaxe && includedCount >= 3) || (!hasItem(mod, Items.SHIELD) && includedCount >= 2) || includedCount >= neededIron) {
                 int toSmelt = Math.min(includedCount, neededIron);
                 if (toSmelt <= 0) return pair;
 
